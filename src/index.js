@@ -12,16 +12,9 @@ app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false})); // mensajes sencillos
 app.use(express.json());
 
-// API
-app.get('/getResponse', (req, res) => { // req = request, res = response. Esta es una forma de definir funciones es javascript
-    //res.send('Hello from API');
-    res.json(
-        {
-            "name": "Gregory",
-            "age": 20
-        }
-    )
-});
+// API => dominio/api/getResponse por convención
+app.use('/api', require('./routes/rt'));
+
 
 // Execute server
 app.listen(app.get('port'), () => {

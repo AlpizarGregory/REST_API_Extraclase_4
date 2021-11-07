@@ -1,0 +1,22 @@
+[
+  {
+    "course": "Taller de programación",
+    "code": 1,
+    "grade": "75"
+  },
+  {
+    "course": "Física General 1",
+    "code": 2,
+    "grade": "76"
+  },
+  {
+    "course": "Cálculo",
+    "code": 3,
+    "grade": "100"
+  },
+  {
+    "course": "Química General 1",
+    "code": 4,
+    "grade": "100"
+  }
+]
